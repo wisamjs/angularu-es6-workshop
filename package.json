@@ -18,6 +18,7 @@
   "homepage": "https://github.com/wzaghal/angularu-es6-workshop#readme",
   "devDependencies": {
     "babel-core": "^5.6.5",
+    "babel-eslint": "^3.1.18",
     "babel-loader": "^5.1.4",
     "browser-sync": "^2.7.12",
     "css-loader": "0.14.5",

@@ -1,9 +1,23 @@
 'use strict';
+var vm = this;
 
-class NoteController{
-  constructor(){
+class Note{
+  constructor(NotesFactory){
+    vm.NotesFactory = NotesFactory;
+
+  }
+  createNote(content){
+    vm.NotesFactory.createNote(content);
+  },
+  getOneNote(id){
+    return vm.NotesFactory.getOneNote(id);
+  },
+  getAllNotes(){
+    return vm.Notes.getAllNotes();
 
   }
 }
 
-export {NoteController};
+Note.$inject = ['Notes'];
+
+export {Note};

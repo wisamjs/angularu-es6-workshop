@@ -8,6 +8,9 @@ module.exports = {
   },
   devtool: 'sourcemap',
   module: {
+    preLoaders: [
+      {test: /\.js$/ , exclude: excludeDirs ,loader: 'eslint-loader'}
+    ],
     loaders: [
       {test: /\.js$/, loader: 'babel-loader', exclude: excludeDirs},
       {test: /\.html$/, loader: 'raw'},

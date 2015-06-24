@@ -1,6 +1,7 @@
 // *Sigh*
 class HomeController {
   constructor($log) {
+    $log('test');
 
   }
 }

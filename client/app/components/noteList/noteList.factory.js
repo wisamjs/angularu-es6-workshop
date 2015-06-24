@@ -9,7 +9,7 @@ let Notes = () => {
   };
 
   let getOneNote = (id) => {
-    return _.find(notes,{id});
+    return _.find(notes, {id});
   };
 
   let createNote = (content) => {
@@ -19,19 +19,9 @@ let Notes = () => {
 
   return {
     getAllNotes,
-    getOneNote
+    getOneNote,
+    createNote
   };
 };
 
 export {Notes};
-
-/*
-  return {
-    getAllNotes,
-    getOneNote,
-    createNote(content){
-      let note = {content, id: ++count};
-      notes.push(note);
-    }
-  };
-*/

@@ -1,16 +1,12 @@
 'use strict';
 import angular from 'angular';
-
-
-//export pattern number 1  - doesn't reinforce naming
-  /*export default angular.module('home', [])
-  .directive('home'); */
+import template from './home.html';
+import {HomeController as controller} from './home.controller';
 
 let homeModule = angular.module('home', [])
   .directive('home', function () {
-    return {};
+    return {template, controller};
   });
 
 
   export {homeModule};
-

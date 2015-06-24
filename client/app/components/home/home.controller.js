@@ -1,11 +1,9 @@
-// *Sigh*
+'use strict';
+
 class HomeController {
-  constructor($log) {
-    $log('test');
+  constructor() {
 
   }
 }
-
-HomeController.$inject = ['$log'];
 
 export {HomeController};

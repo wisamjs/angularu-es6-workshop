@@ -1,3 +1,4 @@
 'use strict';
-import {homeModule} from './home/home';
-export {homeModule};
+import {HomeModule} from './home/home';
+import {NoteMakerModule} from './noteMaker/noteMaker';
+export {HomeModule, NoteMakerModule};

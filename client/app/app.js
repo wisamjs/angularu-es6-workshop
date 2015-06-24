@@ -1,7 +1,6 @@
 'use strict';
 
 import 'normalize.css';
-import {homeModule} from './components/components';
+import {HomeModule, NoteMakerModule} from './components/components';
 import angular from 'angular';
-
-angular.module('app',[ homeModule.name]);
+angular.module('app',[ HomeModule.name, NoteMakerModule.name]);

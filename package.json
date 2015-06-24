@@ -1,0 +1,30 @@
+{
+  "name": "angular-es6-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzaghal/angularu-es6-workshop.git"
+  },
+  "author": "Wisam Zaghal <wisamzaghal@gmail.com> (http://wisam.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wzaghal/angularu-es6-workshop/issues"
+  },
+  "homepage": "https://github.com/wzaghal/angularu-es6-workshop#readme",
+  "devDependencies": {
+    "babel-core": "^5.6.5",
+    "babel-loader": "^5.1.4",
+    "browser-sync": "^2.7.12",
+    "css-loader": "^0.15.1",
+    "gulp": "^3.9.0",
+    "gulp-webpack": "^1.5.0",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11"
+  }
+}

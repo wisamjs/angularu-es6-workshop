@@ -20,7 +20,7 @@ gulp.task('build',function() {
 gulp.task('serve', function() {
   serve({
     port: 4500,
-    open: true,
+    open: false,
     server: {
       baseDir: 'client'
     }

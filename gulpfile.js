@@ -6,7 +6,9 @@ var serve = require('browser-sync');
 var sync = require('run-sequence');
 
 var paths = {
-  app: ['client/app/**/*.js']
+  app: ['client/app/**/*.js'],
+  styles: ['client/app/**/*.css', 'client/app/**/*.scss'],
+  html: ['client/app/**/*.html']
 }
 
 gulp.task('build',function() {
@@ -29,7 +31,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.app, ['build', serve.reload]);
+  gulp.watch([paths.app, paths.styles, paths.html], ['build', serve.reload]);
 
 });
 

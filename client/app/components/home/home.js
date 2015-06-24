@@ -1,4 +1,5 @@
 'use strict';
+import './home.css';
 import angular from 'angular';
 import template from './home.html';
 import {HomeController as controller} from './controller';

@@ -2,7 +2,7 @@ var excludeDirs=/node_modules/;
 
 
 module.exports = {
-  entry: ['client/app/app.js'],
+  entry: ['./client/app/app.js'],
   output: {
     fileName: 'bundle.js'
   },

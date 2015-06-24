@@ -12,7 +12,7 @@ var paths = {
 gulp.task('build',function() {
   return gulp
     .src('client/app/app.js')
-    .pipe(webpack(require('webpack.config')))
+    .pipe(webpack(require('./webpack.config')))
     .pipe(gulp.dest('client'));
 
 });
@@ -20,7 +20,7 @@ gulp.task('build',function() {
 gulp.task('serve', function() {
   serve({
     port: 4500,
-    open: false,
+    open: true,
     server: {
       baseDir: 'client'
     }
@@ -34,6 +34,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('dev', function (done) {
-  sync('build', 'watch', done);
+  sync('build', 'serve', 'watch', done);
 
-};
+});

@@ -5,7 +5,7 @@ import {HomeController as controller} from './controller';
 
 let homeModule = angular.module('home', [])
   .directive('home', function () {
-    return {template, controller};
+    return {template, controller, restrict: 'E'};
   });
 
 

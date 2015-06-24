@@ -13,6 +13,7 @@ let Notes = () => {
   };
 
   let createNote = (content) => {
+    console.log(content);
     let note = {content, id: ++count};
     notes.push(note);
   };

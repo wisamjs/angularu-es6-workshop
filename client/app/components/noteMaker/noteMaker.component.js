@@ -8,7 +8,8 @@ let NoteMakerComponent = function(){
   return {
     restrict: 'E',
     template,
-    controller
+    controller,
+    controllerAs: 'NoteMakerCtrl'
   };
 };
 

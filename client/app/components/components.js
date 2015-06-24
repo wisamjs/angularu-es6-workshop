@@ -2,4 +2,7 @@
 import {HomeModule} from './home/home';
 import {NoteMakerModule} from './noteMaker/noteMaker';
 import {NoteListModule} from './noteList/noteList';
-export {HomeModule, NoteMakerModule, NoteListModule};
+import {NoteModule} from './note/note';
+import {CoreModule} from './core/core';
+
+export {CoreModule, HomeModule, NoteMakerModule, NoteListModule, NoteModule};

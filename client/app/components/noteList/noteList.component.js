@@ -7,7 +7,8 @@ let NoteListComponent = () => {
     restrict: 'E',
     scope: {},
     template,
-    controller
+    controller,
+    controllerAs: 'NoteListCtrl'
   };
 };
 

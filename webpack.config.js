@@ -9,7 +9,8 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, loader: 'babel-loader', exclude: excludeDirs},
-      {test: /\.html$/, loader: 'raw'}
+      {test: /\.html$/, loader: 'raw'},
+      {test: /\.css$/, loader: 'style!css'}
     ]
   }
 };
